@@ -12,7 +12,9 @@ public class Student extends Person
     // given parameter values.
     public Student(String iName, String iAge, int iGrade, double igpa)
     {
-
+        super(iName, iAge);
+        this.grade = iGrade;
+        this.gpa = igpa; 
     }
 
     // TODO: Complete the non-default constructor.
@@ -20,7 +22,9 @@ public class Student extends Person
     // age 0, with the given grade and gpa.
     public Student(int iGrade, double igpa)
     {
-
+        super("John Doe", 0);
+        grade = iGrade;
+        gpa = igpa;
     }
 
     // TODO: Complete the default constructor
@@ -28,7 +32,9 @@ public class Student extends Person
     // and GPA of 0.0.
     public Student()
     {
-
+        super("John Doe", 0);
+        grade = 0; 
+        gpa = 0;
     }
 
 
